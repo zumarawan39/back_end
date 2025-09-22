@@ -216,3 +216,47 @@ stud.speak(); // Samina awaaz nikal raha hai.
 stud.study(); // Samina parh raha hai.
 Yahan Student class ko Animal ki speak method mil rahi hai, aur usme apni study method
 bhi hai. 
+
+
+
+===========================================================================================
+
+REST 
+Representational State Transfer 
+
+REST is an architectural style that define a set of constraints to be used for creating web services 
+
+Restfull Api's( which follow rest rules)   
+CRUD 
+
+ https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+
+
+CRUD 
+GET: retrieves resources 
+POST: submit new data to the server
+PUT: Update whole existing data
+PATCH :update existing data partially 
+Delete remove resourse 
+
+
+resource ==> users(user) == twiter(tweet)
+
+==>Creating Restful Api's
+
+GET: /posts
+POST: /posts
+PATCH: /posts/:id 
+DELETE: /posts/:id 
+
+
+
+
+
+
+
+
+
+
+
+
