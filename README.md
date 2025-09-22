@@ -1,3 +1,5 @@
+===========================================================================================
+
 Node.js, Express aur EJS – Bunyaadi Maloomat
 Node.js Basics
 Node.js kya hai: Node.js ek JavaScript runtime environment hai jo server-side code chalata hai. Iska
@@ -29,7 +31,10 @@ console.log("Salam " + name);
 // app.js
 const greet = require('./greetings');
 greet("Ali"); // Salam Ali
-1
+
+===========================================================================================
+
+
 Folder me exports (index.js): Agar ek folder me bohat si files hain, to aap ek index.js bana ke
 usme saari files se exports combine kar sakte ho. Phir folder ka path require karne par index.js
 apne aap chalta hai. Ye tarika libraries banane me kaam aata hai.
@@ -68,7 +73,9 @@ console.log("Server port 3000 par chal raha hai...");
 Is code me jab aap browser me http://localhost:3000 khologe, to Salam Duniya! Express
 server chal raha hai. screen par nazar aayega.
 
-2
+===========================================================================================
+
+
 Routing (GET/POST): Express me aap URLs ke liye routes define karte ho. app.get('/path',
 (req, res) => {...}) GET requests ke liye aur app.post('/path', (req, res) =>
 {...}) POST requests ke liye use hote hain. Har route ke callback function me aap req (request)
@@ -105,7 +112,11 @@ app.set('view engine', 'ejs');
 Is se Express ko pata chal jayega ke aap EJS templates use kar rahe ho.
 Views directory: By default, aapki EJS templates views naam ke folder me hone chahiye. Wahan
 .ejs files banao, for example views/index.ejs .
-3
+
+
+===========================================================================================
+
+
 Data pass karna aur interpolation: Jab aap route me res.render('index', { title: 'Mera
 Page' }); chalate ho, to index.ejs me <%= title %> likh ke ye value show kar sakte ho.
 Example:
@@ -139,7 +150,9 @@ kar sakte ho:
 app.use(express.static('public'));
 Isse public folder ke andar images ya CSS files ko browser directly access kar sakta hai.
 
-4
+===========================================================================================
+
+
 Includes (partials): Agar header, footer jaise common hisse har page me chahiye to unko alag files
 bana ke include kar sakte ho:
 <%- include('header') %>
@@ -176,7 +189,10 @@ const person1 = new Person("Rahul", 30);
 person1.greet(); // Hello, Rahul
 Yahan new Person() ek naya object banata hai jisme name aur age set hote hain.
 
-5
+===========================================================================================
+
+
+
 Classes (ES6): Modern JavaScript me class syntax use kar sakte ho:
 class Animal {
 constructor(name) {
